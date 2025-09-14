@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>قَرْصَةُ نَحْلَةٍ</title>
+  <meta name="description" content="نقاء الطبيعة في كل قطرة - عسل طبيعي، أعشاب نادرة وزيوت نقية" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css" />
+  <link rel="stylesheet" href="css/all.min.css">
+  <link rel="icon" type="image/x-icon" href="imgs/logo.ico">
+</head>
+<body>
+  <!-- الشريط العلوي -->
+  <header class="topbar reveal" data-animate="fade-down">
+    <nav class="container topbar__inner">
+
+
+      <div class="brand nav-left" aria-label="الشعار">
+        <!-- شعار -->
+        <img src="imgs/logo.jpeg" alt="" class="brand-logo" viewBox="0 0 64 64" width="44" height="44" aria-hidden="true">
+
+      </div>
+
+      <div class="nav-center">
+        <ul class="breadcrumb">
+            <li><a href="index.html">الرئيسية</a></li>
+            <li><a href="honey.html">العسل</a></li>
+            <li><a href="herbs.html">الأعشاب</a></li>
+            <li><a href="oils.html">الزيوت</a></li>
+            <li><a href="#">من نحن</a></li>
+            <li><a href="#">تواصل معنا</a></li>
+          </ul>
+      </div>
+      
+      <div class="nav-right">
+        <button class="menu-toggle" aria-label="فتح القائمة" aria-controls="sideMenu" aria-expanded="false">
+            <i class="fa-solid fa-bars"></i>
+        </button>
+        <button class="cart" aria-label="سلة المشتريات">
+            <i class="fa-solid fa-cart-shopping"></i>
+            <span class="cart__badge" aria-hidden="true">1</span>
+          </button>
+      </div>
+    </nav>
+  </header>
+
+  <!-- Off-canvas side menu for small screens -->
+  <aside id="sideMenu" class="side-menu" aria-hidden="true" tabindex="-1">
+    <div class="side-menu__panel" role="dialog" aria-label="القائمة">
+      <div class="side-menu__header">
+        <span class="side-menu__title">القائمة</span>
+        <button class="side-menu__close" aria-label="إغلاق القائمة">
+          <i class="fa-solid fa-xmark"></i>
+        </button>
+      </div>
+      <ul class="side-menu__list">
+        <li><a href="index.html">الرئيسية</a></li>
+        <li><a href="honey.html">العسل</a></li>
+        <li><a href="herbs.html">الأعشاب</a></li>
+        <li><a href="oils.html">الزيوت</a></li>
+        <li><a href="#">من نحن</a></li>
+        <li><a href="#">تواصل معنا</a></li>
+      </ul>
+    </div>
+    <div class="side-menu__backdrop" aria-hidden="true"></div>
+  </aside>
+
+  <!-- قسم الـ Hero -->
+  <section class="hero" role="banner" aria-label="نقاء الطبيعة">
+    <div class="hero__bg" aria-hidden="true">
+      <img id="heroImg" src="imgs/bakg-one.jpeg" alt="" loading="eager">
+      <div class="hero__overlay"></div>
+    </div>
+
+    <div class="container hero__content">
+        <div class="bee reveal" data-animate="pop" data-delay="120">
+            <span class="white">
+                ق<span class="tashkeel">َ</span>ر<span class="tashkeel">ْ</span>ص<span class="tashkeel">َ</span>ة<span class="tashkeel">ُ</span>
+              </span>
+              <span class="gold">
+                ن<span class="tashkee3">َ</span>ح<span class="tashkee3">ْ</span>ل<span class="tashkee3">َ</span>ة<span class="tashkee2">ٍ</span>
+              </span>
+        </div>
+      <h1 class="hero__title reveal" data-animate="fade-up" data-delay="100">نقاء الطبيعة في كل قطرة</h1>
+      <p class="hero__subtitle reveal" data-animate="fade-up" data-delay="250">
+        اكتشفوا مجموعتنا الفاخرة من العسل الطبيعي، الأعشاب النادرة والزيوت النقية.
+      </p>
+      <a href="#shop" class="btn btn--primary reveal" data-animate="pop" data-delay="450">تسوّق الآن</a>
+    </div>
+
+  </section>
+
+    <!-- Featured Products moved below -->
+
+  <!-- Shop by Category -->
+  <section id="categories" class="categories section-pad" aria-labelledby="catTitle">
+    <div class="container">
+      <h2 id="catTitle" class="section-title reveal" data-animate="fade-up">تسوّق حسب الفئة</h2>
+      <p class="section-subtitle reveal" data-animate="fade-up" data-delay="120">منتجات طبيعية مختارة بعناية من أجل صحتكم</p>
+
+      <div class="category-grid">
+
+        <!-- العسل -->
+        <a class="category-card reveal" data-animate="pop" data-delay="280" href="honey.html" aria-label="العسل">
+          <img src="imgs/honey.jpeg" alt="عسل طبيعي نقي" loading="lazy" />
+          <span class="category-label">العسل</span>
+        </a>
+
+        <!-- الأعشاب -->
+        <a class="category-card reveal" data-animate="pop" data-delay="220" href="herbs.html" aria-label="الأعشاب">
+          <img src="imgs/herbs.jpeg" alt="أعشاب طبيعية متنوعة" loading="lazy" />
+          <span class="category-label">الأعشاب</span>
+        </a>
+        
+        <!-- الزيوت -->
+        <a class="category-card reveal" data-animate="pop" data-delay="160" href="oils.html" aria-label="الزيوت">
+          <img src="imgs/oils.jpeg" alt="زجاجات زيوت طبيعية" loading="lazy" />
+          <span class="category-label">الزيوت</span>
+        </a>
+
+      </div>
+    </div>
+  </section>
+
+
+  <!-- Featured Products -->
+  <section id="featured" class="products section-pad" aria-labelledby="featTitle">
+    <div class="container">
+      <h2 id="featTitle" class="section-title reveal" data-animate="fade-up">المنتجات المميّزة</h2>
+      <p class="section-subtitle reveal" data-animate="fade-up" data-delay="120">الأكثر طلباً وشهرة بين عملائنا</p>
+
+      <div class="product-grid">
+        <!-- Card 1 -->
+        <article class="product-card reveal" data-animate="fade-up" data-delay="140">
+          <a class="product-media" href="#product-honey-cream" aria-label="عسل زهور البرسيم">
+            <img src="imgs/honey.jpeg" alt="عسل زهور البرسيم" loading="lazy" />
+            <span class="product-badge product-badge--new">جديد</span>
+          </a>
+          <div class="product-content">
+            <h3 class="product-title">عسل زهور البرسيم</h3>
+            <div class="product-price">
+              <span class="product-price__current">180 ج.م</span>
+            </div>
+            <button class="btn btn--add" type="button">أضف إلى السلة <i class="fa-solid fa-cart-shopping"></i></button>
+          </div>
+        </article>
+
+        <!-- Card 2 -->
+        <article class="product-card reveal" data-animate="fade-up" data-delay="200">
+          <a class="product-media" href="#product-herbs" aria-label="أعشاب المورينجا">
+            <img src="imgs/honey.jpeg" alt="أعشاب المورينجا" loading="lazy" />
+          </a>
+          <div class="product-content">
+            <h3 class="product-title">أعشاب المورينجا</h3>
+            <div class="product-price">
+              <span class="product-price__current">85 ج.م</span>
+            </div>
+            <button class="btn btn--add" type="button">أضف إلى السلة <i class="fa-solid fa-cart-shopping"></i></button>
+          </div>
+        </article>
+
+        <!-- Card 3 -->
+        <article class="product-card reveal" data-animate="fade-up" data-delay="260">
+          <a class="product-media" href="#product-oil" aria-label="زيت حبّة البركة">
+            <img src="imgs/honey.jpeg" alt="زيت حبّة البركة" loading="lazy" />
+          </a>
+          <div class="product-content">
+            <h3 class="product-title">زيت حبّة البركة</h3>
+            <div class="product-price">
+              <span class="product-price__current">120 ج.م</span>
+            </div>
+            <button class="btn btn--add" type="button">أضف إلى السلة <i class="fa-solid fa-cart-shopping"></i></button>
+          </div>
+        </article>
+
+        <!-- Card 4 (discount) -->
+        <article class="product-card reveal" data-animate="fade-up" data-delay="320">
+          <a class="product-media" href="#product-sidr" aria-label="عسل السدر الجبلي">
+            <img src="imgs/honey.jpeg" alt="عسل السدر الجبلي" loading="lazy" />
+            <span class="product-badge product-badge--sale">15%</span>
+          </a>
+          <div class="product-content">
+            <h3 class="product-title">عسل السدر الجبلي</h3>
+            <div class="product-price">
+              <span class="product-price__current">250 ج.م</span>
+              <span class="product-price__old">295 ج.م</span>
+            </div>
+            <button class="btn btn--add" type="button">أضف إلى السلة <i class="fa-solid fa-cart-shopping"></i></button>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- All Products Section (with filters + pagination) -->
+  <section id="all-products" class="section-pad" aria-labelledby="allProductsTitle">
+    <div class="container">
+      <h2 id="allProductsTitle" class="section-title reveal" data-animate="fade-up">جميع المنتجات</h2>
+      <p class="section-subtitle reveal" data-animate="fade-up" data-delay="120">تصفّح مجموعتنا الكاملة من الخيرات الطبيعية</p>
+
+      <!-- Mobile filter toggle -->
+      <div class="filter-toggle-row">
+        <button id="filterToggle" class="filter-toggle" type="button" aria-expanded="false" aria-controls="shopSidebar">
+          تصنيف <i class="fa-solid fa-chevron-down" aria-hidden="true"></i>
+        </button>
+      </div>
+
+      <div class="shop-layout">
+        <main class="shop-main">
+          <div id="allGrid" class="product-grid"></div>
+          <div id="allPager" class="pagination"></div>
+        </main>
+        <aside id="shopSidebar" class="shop-sidebar" aria-label="الفلاتر" hidden>
+          <div class="filter-card">
+            <h3 class="filter-title">الفئات</h3>
+            <ul id="catList" class="filter-list"></ul>
+          </div>
+          <div class="filter-card">
+            <h3 class="filter-title">السعر</h3>
+            <div class="price-range">
+              <div class="price-row"><span>من</span><span id="priceMinLabel">0</span> ج.م</div>
+              <input id="priceMin" type="range" min="0" max="500" step="5" value="0">
+              <div class="price-row"><span>إلى</span><span id="priceMaxLabel">500</span> ج.م</div>
+              <input id="priceMax" type="range" min="0" max="500" step="5" value="500">
+              <button id="applyFilters" class="btn btn--add" type="button">تطبيق</button>
+            </div>
+          </div>
+        </aside>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="site-footer" aria-labelledby="footerTitle">
+    <div class="container footer__grid">
+      <section class="footer__col" aria-label="نبذة">
+        <h3 id="footerTitle" class="footer__title">قرصة نحلة</h3>
+        <p class="footer__text">متجرُكم الأول للمنتجات الطبيعية من العسل والأعشاب والزيوت، جودةٌ تثق بها.</p>
+      </section>
+
+      <nav class="footer__col" aria-label="روابط سريعة">
+        <h4 class="footer__heading">روابط سريعة</h4>
+        <ul class="footer__links">
+          <li><a href="#">الرئيسية</a></li>
+          <li><a href="#featured">جميع المنتجات</a></li>
+          <li><a href="#">من نحن</a></li>
+          <li><a href="#">تواصل معنا</a></li>
+        </ul>
+      </nav>
+
+      <nav class="footer__col" aria-label="الفئات">
+        <h4 class="footer__heading">الفئات</h4>
+        <ul class="footer__links">
+          <li><a href="honey.html">العسل</a></li>
+          <li><a href="herbs.html">الأعشاب</a></li>
+          <li><a href="oils.html">الزيوت</a></li>
+        </ul>
+      </nav>
+
+      <section class="footer__col" aria-label="تابعنا">
+        <h4 class="footer__heading">تابعنا</h4>
+        <div class="footer__social">
+          <a href="#" aria-label="واتساب"><i class="fa-brands fa-whatsapp"></i></a>
+          <a href="#" aria-label="فيسبوك"><i class="fa-brands fa-facebook"></i></a>
+          <a href="#" aria-label="فيسبوك ماسنجر"><i class="fa-brands fa-facebook-messenger"></i></a>
+        </div>
+      </section>
+    </div>
+
+    <hr class="footer__divider" aria-hidden="true">
+    <div class="container footer__bottom">
+      <p class="footer__copy"> 2024 قرصة نحلة جميع الحقوق محفوظة</p>
+      <a href="" class="footer__copy">تصميم ,انشاء  Ch.M.M </a>
+    </div>
+  </footer>
+
+  <!-- Inline fallback data for local viewing without server -->
+  <script id="productsData" type="application/json">
+  {
+    "currency": "EGP",
+    "categories": [
+      { "id": "c-honey", "name": "العسل" },
+      { "id": "c-herbs", "name": "الأعشاب" },
+      { "id": "c-oils", "name": "الزيوت" }
+    ],
+    "products": [
+      { "id": "p-honey-clover", "sku": "SKU-HNY-CLVR-500", "title": "عسل زهور البرسيم", "description": "عسل طبيعي نقي بطعم متوازن وغني بالفوائد.", "price": 180, "compareAtPrice": null, "currency": "EGP", "categoryId": "c-honey", "tags": ["عسل", "طبيعي"], "images": ["imgs/honey.jpeg"], "thumbnail": "imgs/honey.jpeg", "featured": true, "status": "active" },
+      { "id": "p-honey-sidr", "sku": "SKU-HNY-SIDR-500", "title": "عسل السدر الجبلي", "description": "عسل سدر جبلي فاخر بنكهة قوية ومميزة.", "price": 250, "compareAtPrice": 295, "currency": "EGP", "categoryId": "c-honey", "tags": ["عسل", "السدر"], "images": ["imgs/honey.jpeg"], "thumbnail": "imgs/honey.jpeg", "featured": false, "status": "active", "discount": { "type": "percentage", "value": 15 } },
+      { "id": "p-herbs-moringa", "sku": "SKU-HERB-MRG", "title": "أعشاب المورينجا", "description": "أوراق مورينجا طبيعية عالية الجودة.", "price": 85, "compareAtPrice": null, "currency": "EGP", "categoryId": "c-herbs", "tags": ["أعشاب", "مورينجا"], "images": ["imgs/herbs.jpeg"], "thumbnail": "imgs/herbs.jpeg", "status": "active" },
+      { "id": "p-oil-blackseed", "sku": "SKU-OIL-BLKSD", "title": "زيت حبّة البركة", "description": "زيت حبّة البركة نقي وطبيعي.", "price": 120, "compareAtPrice": null, "currency": "EGP", "categoryId": "c-oils", "tags": ["زيوت", "حبة البركة"], "images": ["imgs/oils.jpeg"], "thumbnail": "imgs/oils.jpeg", "status": "active" },
+      { "id": "p-honey-wild", "sku": "SKU-HNY-WILD-500", "title": "عسل بري", "description": "عسل بري نقي بنكهة مميزة.", "price": 220, "compareAtPrice": null, "currency": "EGP", "categoryId": "c-honey", "tags": ["عسل", "طبيعي"], "images": ["imgs/honey.jpeg"], "thumbnail": "imgs/honey.jpeg", "featured": false, "status": "active" },
+      { "id": "p-herbs-chamomile", "sku": "SKU-HERB-CHM", "title": "زهور البابونج", "description": "زهور بابونج مجففة للاستخدام كمنقوع مهدّئ.", "price": 70, "compareAtPrice": 80, "currency": "EGP", "categoryId": "c-herbs", "tags": ["أعشاب", "بابونج"], "images": ["imgs/herbs.jpeg"], "thumbnail": "imgs/herbs.jpeg", "featured": false, "status": "active" },
+      { "id": "p-herbs-thyme", "sku": "SKU-HERB-THY", "title": "زعتر بري", "description": "زعتر بري عالي الجودة للاستخدامات الغذائية والصحية.", "price": 65, "compareAtPrice": null, "currency": "EGP", "categoryId": "c-herbs", "tags": ["أعشاب", "زعتر"], "images": ["imgs/herbs.jpeg"], "thumbnail": "imgs/herbs.jpeg", "featured": true, "status": "active" },
+      { "id": "p-oil-olive", "sku": "SKU-OIL-OLV-250", "title": "زيت زيتون بكر ممتاز", "description": "زيت زيتون بكر معصور على البارد بطعم غني.", "price": 95, "compareAtPrice": 110, "currency": "EGP", "categoryId": "c-oils", "tags": ["زيوت", "زيتون"], "images": ["imgs/oils.jpeg"], "thumbnail": "imgs/oils.jpeg", "featured": true, "status": "active" },
+      { "id": "p-oil-almond", "sku": "SKU-OIL-ALM-100", "title": "زيت اللوز الحلو", "description": "زيت لوز حلو نقي للاستخدام التجميلي والعناية بالبشرة.", "price": 140, "compareAtPrice": null, "currency": "EGP", "categoryId": "c-oils", "tags": ["زيوت", "لوز"], "images": ["imgs/oils.jpeg"], "thumbnail": "imgs/oils.jpeg", "featured": false, "status": "active" },
+      { "id": "p-honey-acacia", "sku": "SKU-HNY-ACA-500", "title": "عسل الأكاسيا", "description": "عسل خفيف بنكهة لطيفة وشفاف اللون.", "price": 150, "compareAtPrice": null, "currency": "EGP", "categoryId": "c-honey", "tags": ["عسل", "أكاسيا"], "images": ["imgs/honey.jpeg"], "thumbnail": "imgs/honey.jpeg", "featured": true, "status": "active" },
+      { "id": "p-honey-spring", "sku": "SKU-HNY-SPR-500", "title": "عسل زهور الربيع", "description": "مذاق زهري منعش وغني بالعناصر الغذائية.", "price": 190, "compareAtPrice": 210, "currency": "EGP", "categoryId": "c-honey", "tags": ["عسل", "ربيع"], "images": ["imgs/honey.jpeg"], "thumbnail": "imgs/honey.jpeg", "featured": false, "status": "active", "discount": { "type": "percentage", "value": 10 } },
+      { "id": "p-honey-forest", "sku": "SKU-HNY-FRS-500", "title": "عسل الغابات", "description": "عسل داكن بطابع خشبي ونكهة عميقة.", "price": 230, "compareAtPrice": null, "currency": "EGP", "categoryId": "c-honey", "tags": ["عسل", "غابات"], "images": ["imgs/honey.jpeg"], "thumbnail": "imgs/honey.jpeg", "featured": false, "status": "active" },
+      { "id": "p-herbs-peppermint", "sku": "SKU-HERB-PPM", "title": "نعناع فلفلي", "description": "أوراق نعناع فلفلي مجففة منعشة.", "price": 55, "compareAtPrice": null, "currency": "EGP", "categoryId": "c-herbs", "tags": ["أعشاب", "نعناع"], "images": ["imgs/herbs.jpeg"], "thumbnail": "imgs/herbs.jpeg", "featured": false, "status": "active" },
+      { "id": "p-herbs-rosemary", "sku": "SKU-HERB-RSM", "title": "إكليل الجبل", "description": "أوراق روزماري عطرية للطهي والمشروبات.", "price": 60, "compareAtPrice": 70, "currency": "EGP", "categoryId": "c-herbs", "tags": ["أعشاب", "روزماري"], "images": ["imgs/herbs.jpeg"], "thumbnail": "imgs/herbs.jpeg", "featured": false, "status": "active" },
+      { "id": "p-herbs-sage", "sku": "SKU-HERB-SGE", "title": "قصعين (ميرمية)", "description": "أوراق ميرمية مختارة بعناية.", "price": 50, "compareAtPrice": null, "currency": "EGP", "categoryId": "c-herbs", "tags": ["أعشاب", "ميرمية"], "images": ["imgs/herbs.jpeg"], "thumbnail": "imgs/herbs.jpeg", "featured": true, "status": "active" },
+      { "id": "p-oil-sesame", "sku": "SKU-OIL-SSM-250", "title": "زيت السمسم", "description": "زيت سمسم معصور على البارد غني بالعناصر المفيدة.", "price": 85, "compareAtPrice": null, "currency": "EGP", "categoryId": "c-oils", "tags": ["زيوت", "سمسم"], "images": ["imgs/oils.jpeg"], "thumbnail": "imgs/oils.jpeg", "featured": false, "status": "active" },
+      { "id": "p-oil-coconut", "sku": "SKU-OIL-CCN-200", "title": "زيت جوز الهند", "description": "زيت جوز هند نقي يستخدم للطهي والعناية.", "price": 110, "compareAtPrice": 125, "currency": "EGP", "categoryId": "c-oils", "tags": ["زيوت", "جوز الهند"], "images": ["imgs/oils.jpeg"], "thumbnail": "imgs/oils.jpeg", "featured": true, "status": "active" },
+      { "id": "p-oil-argan", "sku": "SKU-OIL-ARG-100", "title": "زيت الأرجان", "description": "زيت أرجان مغربي ممتاز للعناية بالشعر والبشرة.", "price": 220, "compareAtPrice": 245, "currency": "EGP", "categoryId": "c-oils", "tags": ["زيوت", "أرجان"], "images": ["imgs/oils.jpeg"], "thumbnail": "imgs/oils.jpeg", "featured": false, "status": "active" }
+    ]
+  }
+  </script>
+
+  <script src="js/script.js"></script>
+  <script src="js/all-products.js"></script>
+</body>
+</html>
